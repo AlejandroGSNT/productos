@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  #add resource productos
-  resources :productos
 
-  #add resource marcas
-  resources :marcas
-  get 'index_marca', to: 'marcas#index'
-  get 'index_producto', to: 'productos#index'
+  resources :products
+  resources :brands
+
+  get 'index_brand', to: 'brands#index'
+  get 'index_product', to: 'products#index'
   get 'index_home', to: 'home#index'
   get 'home/index'
   

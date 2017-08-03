@@ -4,15 +4,18 @@ es:
   activerecord:
     errors:
       models:
-        producto:
+        product:
           attributes:
-            precio:
-              less_than_or_equal_to: " debe de ser menor o igual a 100"
-              not_a_number: " debe de ser un valor numérico"
-        marca:
+            name:
+              blank: "- Nombre no puede estar vaío"
+            price:
+              blank: "- Precio no puede estar vacío"
+              less_than_or_equal_to: "- Precio debe de ser menor o igual a 100"
+              not_a_number: "- Precio debe de ser un valor numérico"
+        brand:
           attributes:
-            nombre:
-              blank: " no puede estar vacío"
+            name:
+              blank: "- Nombre no puede estar vacío"
   devise:
     confirmations:
       confirmed: "Su cuenta ha sido confirmada."

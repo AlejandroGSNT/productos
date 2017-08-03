@@ -8467,3 +8467,1903 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProductos (20170802024630)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "productos"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170802024630"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMarcas (20170802014737)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "marcas"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170802014737"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-03 18:05:28.899818"], ["updated_at", "2017-08-03 18:05:28.899818"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-03 18:05:28.910804"], ["updated_at", "2017-08-03 18:05:28.910804"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMarcas (20170802014737)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMarcas (20170802014737)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBrands (20170803181003)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "brands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170803181003"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20170803181144)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "price" integer, "brand_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_f3b4d49caa"
+FOREIGN KEY ("brand_id")
+  REFERENCES "brands" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170803181144"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_products_on_brand_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_products_on_brand_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-08-03 13:34:13 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (197.4ms)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_brand_path' for #<#<Class:0x007f977f2180b8>:0x007f977f1f3510>
+Did you mean?  index_marca_path):
+    10: <div class="jumbotron text-center", style="height: 800px;">
+    11:   <h1>Michelada.io</h1>
+    12:   <p>Sistema para la administracion de productos</p> 
+    13: 	<%= link_to 'Marcas', index_brand_path, :class => "btn btn-primary" %>
+    14: 	<%= link_to 'Productos', index_brand_path, :class => "btn btn-primary" %>
+    15: </div>
+    16: 
+  
+app/views/home/index.html.erb:13:in `_app_views_home_index_html_erb___384023016382178215_70144324851240'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_products_on_brand_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_products_on_brand_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-08-03 13:34:53 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (207.1ms)
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_brand_path' for #<#<Class:0x007f89480d8f30>:0x007f8946966730>
+Did you mean?  index_marca_path):
+    10: <div class="jumbotron text-center", style="height: 800px;">
+    11:   <h1>Michelada.io</h1>
+    12:   <p>Sistema para la administracion de productos</p> 
+    13: 	<%= link_to 'Marcas', index_brand_path, :class => "btn btn-primary" %>
+    14: 	<%= link_to 'Productos', index_brand_path, :class => "btn btn-primary" %>
+    15: </div>
+    16: 
+  
+app/views/home/index.html.erb:13:in `_app_views_home_index_html_erb__616417018898925470_70113798066000'
+Started GET "/" for 127.0.0.1 at 2017-08-03 13:34:55 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (208.7ms)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_brand_path' for #<#<Class:0x007f89480d8f30>:0x007f8948162c58>
+Did you mean?  index_marca_path):
+    10: <div class="jumbotron text-center", style="height: 800px;">
+    11:   <h1>Michelada.io</h1>
+    12:   <p>Sistema para la administracion de productos</p> 
+    13: 	<%= link_to 'Marcas', index_brand_path, :class => "btn btn-primary" %>
+    14: 	<%= link_to 'Productos', index_brand_path, :class => "btn btn-primary" %>
+    15: </div>
+    16: 
+  
+app/views/home/index.html.erb:13:in `_app_views_home_index_html_erb__616417018898925470_70113798112520'
+Started GET "/" for 127.0.0.1 at 2017-08-03 13:35:50 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (179.9ms)
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_brands_path' for #<#<Class:0x007f89480d8f30>:0x007f8944fc5c40>
+Did you mean?  index_marca_path):
+    10: <div class="jumbotron text-center", style="height: 800px;">
+    11:   <h1>Michelada.io</h1>
+    12:   <p>Sistema para la administracion de productos</p> 
+    13: 	<%= link_to 'Marcas', index_brands_path, :class => "btn btn-primary" %>
+    14: 	<%= link_to 'Productos', index_products_path, :class => "btn btn-primary" %>
+    15: </div>
+    16: 
+  
+app/views/home/index.html.erb:13:in `_app_views_home_index_html_erb__616417018898925470_70113772320300'
+Started GET "/" for 127.0.0.1 at 2017-08-03 13:35:51 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (186.2ms)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_brands_path' for #<#<Class:0x007f89480d8f30>:0x007f8944f73ee0>
+Did you mean?  index_marca_path):
+    10: <div class="jumbotron text-center", style="height: 800px;">
+    11:   <h1>Michelada.io</h1>
+    12:   <p>Sistema para la administracion de productos</p> 
+    13: 	<%= link_to 'Marcas', index_brands_path, :class => "btn btn-primary" %>
+    14: 	<%= link_to 'Productos', index_products_path, :class => "btn btn-primary" %>
+    15: </div>
+    16: 
+  
+app/views/home/index.html.erb:13:in `_app_views_home_index_html_erb__616417018898925470_70113772161240'
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:40:28 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (200.8ms)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_brands_path' for #<#<Class:0x007fd74d46ee08>:0x007fd74d455020>
+Did you mean?  index_brand_path
+               index_brand_url):
+    10: <div class="jumbotron text-center", style="height: 800px;">
+    11:   <h1>Michelada.io</h1>
+    12:   <p>Sistema para la administracion de productos</p> 
+    13: 	<%= link_to 'Marcas', index_brands_path, :class => "btn btn-primary" %>
+    14: 	<%= link_to 'Productos', index_products_path, :class => "btn btn-primary" %>
+    15: </div>
+    16: 
+  
+app/views/home/index.html.erb:13:in `_app_views_home_index_html_erb___561860724927127500_70281356430900'
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:40:45 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 284ms (Views: 281.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:40:48 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 52ms (Views: 34.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/brands/new" for 127.0.0.1 at 2017-08-03 13:40:51 -0500
+Processing by BrandsController#new as HTML
+  Rendering brands/new.html.erb within layouts/application
+  Rendered brands/_form.html.erb (15.4ms)
+  Rendered brands/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 64ms (Views: 41.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 13:41:00 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 51ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:41:01 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 79ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 13:41:01 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 76ms (Views: 62.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:41:03 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (5.5ms)
+  Rendered products/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 59ms (Views: 38.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:41:08 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 48ms (Views: 41.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:41:10 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (5.6ms)
+  Rendered products/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 80ms (Views: 69.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:41:14 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 86ms (Views: 81.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:42:54 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:42:56 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:42:57 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 48ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/brands/new" for 127.0.0.1 at 2017-08-03 13:42:59 -0500
+Processing by BrandsController#new as HTML
+  Rendering brands/new.html.erb within layouts/application
+  Rendered brands/_form.html.erb (2.7ms)
+  Rendered brands/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/brands" for 127.0.0.1 at 2017-08-03 13:43:06 -0500
+Processing by BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KOfxS3MRiis22TtSLCGdO5/Q0Wz2YEPVd2u/zdIGQvOzzNzYplFqxjrn/wbmvFDdlqJ2SkkNPOK9Dwd95gQZGA==", "brand"=>{"name"=>"Apple"}, "commit"=>"Create Brand"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Apple"], ["created_at", "2017-08-03 18:43:06.101326"], ["updated_at", "2017-08-03 18:43:06.101326"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/brands/1
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/brands/1" for 127.0.0.1 at 2017-08-03 13:43:06 -0500
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering brands/show.html.erb within layouts/application
+  Rendered brands/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 13:43:08 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `nombre' for #<Brand:0x007fd75386f6a0>):
+    18:           </tr>
+    19:         <% @brands.each do |brand| %>
+    20:           <tr>
+    21:             <td><%= brand.nombre %></td>
+    22:             <td><%= link_to 'Mostrar', brand_path(brand) %></td>
+    23:     	      <td><%= link_to 'Editar', edit_brand_path(brand) %></td>
+    24:             <td><%= link_to 'Eliminar', brand_path(brand),
+  
+app/views/brands/index.html.erb:21:in `block in _app_views_brands_index_html_erb__1276515207231532886_70281358714900'
+app/views/brands/index.html.erb:19:in `_app_views_brands_index_html_erb__1276515207231532886_70281358714900'
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 13:45:56 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/brands/new" for 127.0.0.1 at 2017-08-03 13:45:57 -0500
+Processing by BrandsController#new as HTML
+  Rendering brands/new.html.erb within layouts/application
+  Rendered brands/_form.html.erb (8.3ms)
+  Rendered brands/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/brands" for 127.0.0.1 at 2017-08-03 13:46:02 -0500
+Processing by BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VVV3XnDb+GwnIWRh5aKqR2RYnPrH/KVYidryOMZxQynOflrNpZsYgSsfoDUvP2ehbSo73HiR2m9DvkqI8nMYwg==", "brand"=>{"name"=>"Samsung"}, "commit"=>"Create Brand"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Samsung"], ["created_at", "2017-08-03 18:46:02.784241"], ["updated_at", "2017-08-03 18:46:02.784241"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/brands/2
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/brands/2" for 127.0.0.1 at 2017-08-03 13:46:02 -0500
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering brands/show.html.erb within layouts/application
+  Rendered brands/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 13:46:04 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/brands/new" for 127.0.0.1 at 2017-08-03 13:46:05 -0500
+Processing by BrandsController#new as HTML
+  Rendering brands/new.html.erb within layouts/application
+  Rendered brands/_form.html.erb (2.6ms)
+  Rendered brands/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 52ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/brands" for 127.0.0.1 at 2017-08-03 13:46:08 -0500
+Processing by BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/G4ZEHmhOjvCh2fVOmjQ/mVBiaWYeaWFanZX2SMiff1nRTSDrOHa1s65o4Hw9R0YbDMugycU2rKgEu9pFyAmFg==", "brand"=>{"name"=>"Lg"}, "commit"=>"Create Brand"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Lg"], ["created_at", "2017-08-03 18:46:08.307806"], ["updated_at", "2017-08-03 18:46:08.307806"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/brands/3
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/brands/3" for 127.0.0.1 at 2017-08-03 13:46:08 -0500
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering brands/show.html.erb within layouts/application
+  Rendered brands/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 13:46:09 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:46:10 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 57ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 13:46:11 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (3.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 54ms (Views: 44.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:46:13 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (7.9ms)
+  Rendered products/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 49ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 13:47:02 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cGhGOca/K4BO8WEdtnf46inamlrym7tClUuo7v9wx+/rQ2uqE//LbULPpUl86jUMIKg9fE32xHVfLxBey3KcBA==", "product"=>{"name"=>"Macbook Air", "description"=>"Macbook Air 2012 con 2 gb de memoria RAM", "price"=>"29", "brand_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Macbook Air"], ["description", "Macbook Air 2012 con 2 gb de memoria RAM"], ["price", 29], ["brand_id", 1], ["created_at", "2017-08-03 18:47:02.772078"], ["updated_at", "2017-08-03 18:47:02.772078"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-08-03 13:47:02 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:     	<div class="col col-md-6 col-md-offset-3" style="padding: 40px;">
+    10: 		    <div>
+    11: 			  <strong>Nombre:</strong>
+    12: 			  <%= @Product.name %>
+    13: 			</div>
+    14: 
+    15: 			<div>
+  
+app/views/products/show.html.erb:12:in `_app_views_products_show_html_erb___255210533482090114_70281381842400'
+Started GET "/products/1" for 127.0.0.1 at 2017-08-03 13:48:58 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `description' for nil:NilClass):
+    14: 
+    15: 			<div>
+    16: 			  <strong>Descripción:</strong>
+    17: 			  <%= @Product.description %>
+    18: 			</div>
+    19: 			 
+    20: 			<div>
+  
+app/views/products/show.html.erb:17:in `_app_views_products_show_html_erb___255210533482090114_70281398530280'
+Started GET "/products/1" for 127.0.0.1 at 2017-08-03 13:49:10 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (128.0ms)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_Product_path' for #<#<Class:0x007fd7540f2d40>:0x007fd751e262d0>
+Did you mean?  index_product_path
+               edit_product_url):
+    27: 			  <%= @product.brand.name %>
+    28: 			</div>
+    29: 
+    30: 			<%= link_to 'Editar', edit_Product_path(@Product),:class => "btn btn-info"  %>   
+    31: 			<%= link_to 'Lista', Products_path,:class => "btn btn-primary"  %>  
+    32: 			<%= link_to 'Menú principal', index_home_path ,:class => "btn btn-primary" %>
+    33: 			</div>
+  
+app/views/products/show.html.erb:30:in `_app_views_products_show_html_erb___255210533482090114_70281384246640'
+Started GET "/products/1" for 127.0.0.1 at 2017-08-03 13:49:34 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:49:37 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 53ms (Views: 43.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-08-03 13:49:39 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 65ms (Views: 58.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2017-08-03 13:49:41 -0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (2.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  [1m[36mBrand Load (2.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (10.5ms)
+  Rendered products/edit.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 53ms (Views: 44.9ms | ActiveRecord: 5.1ms)
+
+
+Started PATCH "/products/1" for 127.0.0.1 at 2017-08-03 13:49:47 -0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MJjwVEJLzhM3xWhl4GyzPpY7EdVJsaDT2emO+CYEs92rs93Hlwsu/jv7rDEq8X7Yn0m28/bc3+QTjTZIEgboNg==", "product"=>{"name"=>"Macbook Air", "description"=>"Macbook Air 2012 con 2 gb de memoria RAM", "price"=>"21", "brand_id"=>"1"}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "products" SET "price" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["price", 21], ["updated_at", "2017-08-03 18:49:47.317564"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 12ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-08-03 13:49:47 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:49:48 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:49:51 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (3.4ms)
+  Rendered products/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 13:50:16 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RVTjdswWr7G6zmtlEs4LUCSwaCFZ/kalinF5I2Lhiiref87lGVZPXLbwrzHYU8a2LcLPB+aTOZJAFcGTVuPRwQ==", "product"=>{"name"=>"Iphone 7", "description"=>"Iphone 7 con 4 gb de memoria RAM", "price"=>"78", "brand_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Iphone 7"], ["description", "Iphone 7 con 4 gb de memoria RAM"], ["price", 78], ["brand_id", 1], ["created_at", "2017-08-03 18:50:16.077956"], ["updated_at", "2017-08-03 18:50:16.077956"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2017-08-03 13:50:16 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:50:17 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 52ms (Views: 46.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-08-03 13:50:19 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 46ms (Views: 39.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:50:23 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 56ms (Views: 51.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:50:31 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (5.2ms)
+  Rendered products/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 48ms (Views: 42.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:50:56 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 62ms (Views: 58.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:50:59 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (6.2ms)
+  Rendered products/new.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 79ms (Views: 72.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 13:51:10 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gQhBOpEg/wYGoCE3K0XS3r0xY0k0DFwtZ+1egGQF9Z0aI2ypRGAf6wqe5WPh2B84tEPEb4thIxqtieYwUAeudg==", "product"=>{"name"=>"Macbook pro 2015", "description"=>"Macbook pro 2015 con i5", "price"=>"99", "brand_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Macbook pro 2015"], ["description", "Macbook pro 2015 con i5"], ["price", 99], ["brand_id", 1], ["created_at", "2017-08-03 18:51:10.257806"], ["updated_at", "2017-08-03 18:51:10.257806"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2017-08-03 13:51:10 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:51:13 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:51:15 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (6.6ms)
+  Rendered products/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 56ms (Views: 51.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 13:51:45 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CaylgZSnTbDGO+QvB0TQgSbF65Xvigcd0t0CDQRHFaqSh4gSQeetXcoFIHvN2R1nL7dMs1DneCoYubq9MEVOQQ==", "product"=>{"name"=>"LG G3", "description"=>"Celular con cámara de 13 mpx", "price"=>"32", "brand_id"=>"3"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "LG G3"], ["description", "Celular con cámara de 13 mpx"], ["price", 32], ["brand_id", 3], ["created_at", "2017-08-03 18:51:45.526909"], ["updated_at", "2017-08-03 18:51:45.526909"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/4
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2017-08-03 13:51:45 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:51:47 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 44ms (Views: 38.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:51:49 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (8.2ms)
+  Rendered products/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 50ms (Views: 43.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 13:52:19 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qKOzEuSKggrp/jzg2a5F+Ei/z7vG87agoelFo9meJowziJ6BMcpi5+XA+LQTM4geQc1onXmeyZdrjf0T7Zx9Zw==", "product"=>{"name"=>"Galaxy s8", "description"=>"celular con procesador intel", "price"=>"49", "brand_id"=>"2"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Galaxy s8"], ["description", "celular con procesador intel"], ["price", 49], ["brand_id", 2], ["created_at", "2017-08-03 18:52:20.000187"], ["updated_at", "2017-08-03 18:52:20.000187"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 8ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2017-08-03 13:52:20 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:52:22 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (10.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 48ms (Views: 33.2ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:52:25 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 13:52:28 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:52:29 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 76ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:52:30 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 54ms (Views: 47.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:52:31 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 70ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:52:32 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 68ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/brands/2/edit" for 127.0.0.1 at 2017-08-03 13:52:33 -0500
+Processing by BrandsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering brands/edit.html.erb within layouts/application
+  Rendered brands/_form.html.erb (3.0ms)
+  Rendered brands/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 48ms (Views: 42.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/brands/2" for 127.0.0.1 at 2017-08-03 13:52:36 -0500
+Processing by BrandsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BVanP0Ohi+KjpBFTaMhwp1t6K0C1kacmYM0nrEKJ/auefYqsluFrD6+a1QeiVb1BUgiMZgr82BGqqZ8cdoumQA==", "brand"=>{"name"=>"Samsung x"}, "commit"=>"Update Brand", "id"=>"2"}
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "brands" SET "name" = ?, "updated_at" = ? WHERE "brands"."id" = ?[0m  [["name", "Samsung x"], ["updated_at", "2017-08-03 18:52:36.367007"], ["id", 2]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/brands/2
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/brands/2" for 127.0.0.1 at 2017-08-03 13:52:36 -0500
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering brands/show.html.erb within layouts/application
+  Rendered brands/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 13:52:37 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 49ms (Views: 46.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:52:38 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 13:52:39 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 45ms (Views: 37.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2017-08-03 13:52:40 -0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (11.4ms)
+  Rendered products/edit.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 53ms (Views: 45.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/products/1" for 127.0.0.1 at 2017-08-03 13:52:44 -0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WUon4Sh/kvVVnU7dlDJ/Qx8G8bEpHeIlhuyrbuM5av3CYQpy/T9yGFmjioler7KlFnRWl5ZwnRJMiBPe1zsxFg==", "product"=>{"name"=>"Macbook Air 1", "description"=>"Macbook Air 2012 con 2 gb de memoria RAM", "price"=>"21", "brand_id"=>"1"}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "products" SET "name" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["name", "Macbook Air 1"], ["updated_at", "2017-08-03 18:52:44.739171"], ["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 12ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-08-03 13:52:44 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 29.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:52:46 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 51ms (Views: 45.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:52:47 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 13:52:48 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/products/4" for 127.0.0.1 at 2017-08-03 13:52:52 -0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JrQdw1x0mHET7sDoP51cmSdWayUE+fQB+GPAtQGmbgC9nzBQiTR4nB/QBLz1AJF/LiTMA7uUizYyB3gFNaQ16w==", "id"=>"4"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:52:52 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:52:54 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:52:55 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/brands/3" for 127.0.0.1 at 2017-08-03 13:52:58 -0500
+Processing by BrandsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"10jx3O6KCHLmU9So1bLGmW1BADAZeonpVChpM4BOjtZMY9xPO8ron+ptEPwfLwt/ZDOnFqYX9t6eTNGDtEzVPQ==", "id"=>"3"}
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (uninitialized constant Brand::Produc):
+  
+app/controllers/brands_controller.rb:41:in `destroy'
+Started POST "/__web_console/repl_sessions/f7f076f26ee47ecded6ecb9b0e617373/trace" for 127.0.0.1 at 2017-08-03 13:54:10 -0500
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:54:23 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 13:54:24 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/products/5" for 127.0.0.1 at 2017-08-03 13:54:28 -0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Sxrt9FXkerVSqWRm2zB2jtc06480FKA+D/ntrh12IzLQMcBngKSaWF6XoDIRrbto3kZMqYt53wnFnVUeKXR42Q==", "id"=>"5"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 9ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:54:28 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:55:40 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:55:41 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 41ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:55:42 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 60ms (Views: 48.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/brands/3" for 127.0.0.1 at 2017-08-03 13:55:46 -0500
+Processing by BrandsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hKCoq15dZpFTLmw1lHhwF6JMDmbNvdiHqtmDLLaNavMfi4U4ix2GfF8QqGFe5b3xqz6pQHLQp7BgvTucgo8xGA==", "id"=>"3"}
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."brand_id" = ?[0m  [["brand_id", 3]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/brands
+Completed 302 Found in 13ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 13:55:46 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:55:49 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 13:55:50 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 49ms (Views: 43.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:55:58 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (9.4ms)
+  Rendered products/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:56:01 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 53ms (Views: 50.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:56:03 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 56ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:56:05 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (1.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 45ms (Views: 39.0ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/brands/1" for 127.0.0.1 at 2017-08-03 13:56:08 -0500
+Processing by BrandsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"s0zuohDruT8+7y5n5f5dIEdIhCGfLHabYWtPekR6hpgoZ8MxxatZ0jLR6jMvY5DGTjojByBBCayrD/fKcHjdcw==", "id"=>"1"}
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."brand_id" = ?[0m  [["brand_id", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 3]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/brands
+Completed 302 Found in 15ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 13:56:08 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:56:09 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 49ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 13:56:09 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 47ms (Views: 41.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:56:12 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (9.1ms)
+  Rendered products/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 53ms (Views: 49.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 13:56:23 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HS5+X7xMlQQ9SEytTKTSk0fiOMSdFSr6UsdgOX9Q7nGGBVPMaQx16TF2iPmGOR91TpCf4iJ4Vc2Yo9iJS1K1mg==", "product"=>{"name"=>"Galaxy s8", "description"=>"celular con procesador intel", "price"=>"43", "brand_id"=>"2"}, "commit"=>"Create Product"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Galaxy s8"], ["description", "celular con procesador intel"], ["price", 43], ["brand_id", 2], ["created_at", "2017-08-03 18:56:23.455037"], ["updated_at", "2017-08-03 18:56:23.455037"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 21ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-08-03 13:56:23 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 40ms (Views: 33.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:56:24 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:56:26 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:56:28 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 49ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/brands/new" for 127.0.0.1 at 2017-08-03 13:56:29 -0500
+Processing by BrandsController#new as HTML
+  Rendering brands/new.html.erb within layouts/application
+  Rendered brands/_form.html.erb (3.7ms)
+  Rendered brands/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 52ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/brands" for 127.0.0.1 at 2017-08-03 13:56:32 -0500
+Processing by BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jpq2j2uduzI9wV03bY8FdmOoEXKsZ+SCYhM2NoD42Sy9sZscvt1b3zH/mWOnEsiQatq2VBMKm7Wod46GtPqCxw==", "brand"=>{"name"=>"Apple"}, "commit"=>"Create Brand"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Apple"], ["created_at", "2017-08-03 18:56:32.337825"], ["updated_at", "2017-08-03 18:56:32.337825"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/brands/4
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/brands/4" for 127.0.0.1 at 2017-08-03 13:56:32 -0500
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering brands/show.html.erb within layouts/application
+  Rendered brands/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 13:56:33 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:56:35 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 51ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:56:36 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 50ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:56:37 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 77ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 13:56:37 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 50ms (Views: 42.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:56:38 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (14.9ms)
+  Rendered products/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 13:56:51 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jjr3qhmmh23lyrN7l7jMBg1YO4cC6XaWfPnGL+lYOOEVEdo5zOZngOn0dy9dJQHgBCqcob2ECaG2nX6f3VpjCg==", "product"=>{"name"=>"Macbook pro 2015", "description"=>"Macbook pro 2015 con i5", "price"=>"87", "brand_id"=>"4"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Macbook pro 2015"], ["description", "Macbook pro 2015 con i5"], ["price", 87], ["brand_id", 4], ["created_at", "2017-08-03 18:56:51.034480"], ["updated_at", "2017-08-03 18:56:51.034480"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/7
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2017-08-03 13:56:51 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:56:52 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:56:53 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (2.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (10.6ms)
+  Rendered products/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 58ms (Views: 49.1ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 13:57:08 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6z5Agfcmt4PU8ZnCEeLlBCOwUlAffCfDg3wgJXY2ppBwFW0SImZXbtjPXZbbfyjiKsL1dqARWPRJGJiVQjT9ew==", "product"=>{"name"=>"Macbook Air 1", "description"=>"Macbook Air 2012 con 2 gb de memoria RAM", "price"=>"97", "brand_id"=>"4"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Macbook Air 1"], ["description", "Macbook Air 2012 con 2 gb de memoria RAM"], ["price", 97], ["brand_id", 4], ["created_at", "2017-08-03 18:57:08.513260"], ["updated_at", "2017-08-03 18:57:08.513260"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/8
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2017-08-03 13:57:08 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:57:10 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 48ms (Views: 43.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 13:57:14 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (11.2ms)
+  Rendered products/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 51ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 13:57:22 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gV46NhckQ09IIHZHJRi7ngxc9UajnakcmmqRvaxAOcwadRelwmSjokQeshPvhXZ4BS5SYBzw1itQDikNmEJiJw==", "product"=>{"name"=>"Iphone 7", "description"=>"Iphone 7 con 4 gb de memoria RAM", "price"=>"57", "brand_id"=>"4"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Iphone 7"], ["description", "Iphone 7 con 4 gb de memoria RAM"], ["price", 57], ["brand_id", 4], ["created_at", "2017-08-03 18:57:22.548725"], ["updated_at", "2017-08-03 18:57:22.548725"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2017-08-03 13:57:22 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 13:57:23 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:57:25 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:57:26 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 13:57:35 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 67ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_brand" for 127.0.0.1 at 2017-08-03 13:59:47 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/brands/new" for 127.0.0.1 at 2017-08-03 14:01:36 -0500
+Processing by BrandsController#new as HTML
+  Rendering brands/new.html.erb within layouts/application
+  Rendered brands/_form.html.erb (7.9ms)
+  Rendered brands/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 70ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2017-08-03 14:01:37 -0500
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (2.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered brands/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 74ms (Views: 67.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/index_home" for 127.0.0.1 at 2017-08-03 14:01:39 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index_product" for 127.0.0.1 at 2017-08-03 14:01:39 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 61ms (Views: 55.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:01:40 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (8.5ms)
+  Rendered products/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 71ms (Views: 64.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:01:42 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lLBs9u7SpeOsSvGzXOIWddOYOMokSxVZQHPcQSvbEf4Pm0FlO5JFDqB0NeeWf9uT2uqf7Jsmam6KF2TxH9lKFQ==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (4.4ms)
+  Rendered products/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:02:54 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:03:01 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (31.1ms)
+  Rendered products/new.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 272ms (Views: 251.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:03:03 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CLL8FWFQBtiPr1wcxaeWygk2JkflqAbJVzSardvlI2qTmdGGtBDmNYORmEgPOlssAESBYVrFef6dUCId7+d4gQ==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (6.9ms)
+  Rendered products/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 35ms (Views: 30.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:07:07 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:07:20 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:08:11 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (26.2ms)
+  Rendered products/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 63ms (Views: 57.0ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:08:13 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xu4q9wCYLfX5Kx96mLHB3wViSQ1x6FN9PwbXeTHKn0BdxQdk1djNGPUV2y5SLAw5DBDuK86FLEr1Ym/JBcjEqw==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (3.1ms)
+  Rendered products/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:08:24 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IczQFojHL/Lz1wURtSQAxfsqG43dXNxbWy5u+scYIhK65/2FXYfPH//pwUV/uc0j8li8q2Ixo2yRStZK8xp5+Q==", "product"=>{"name"=>"", "description"=>"", "price"=>"5555", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (3.3ms)
+  Rendered products/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:10:39 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sVVfa9ao4YabtD2hrxjnxuQP5DClDeqpXsJ3xK++yw8qfnL4A+gBa5eK+fVlhSog7X1DFhpglZ6Ups90m7yQ5A==", "product"=>{"name"=>"", "description"=>"", "price"=>"5555", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (3.6ms)
+  Rendered products/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 60ms (Views: 57.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:10:47 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GLnnqjsxuzPHdzbilhlIJKZOQ6r7WDWapqWv7SA/HvCDkso57nFb3stJ8rZchIXCrzzkjEQ1Sq1swRddFD1FGw==", "product"=>{"name"=>"", "description"=>"", "price"=>"100", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["price", 100], ["created_at", "2017-08-03 19:10:47.374967"], ["updated_at", "2017-08-03 19:10:47.374967"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/10
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/products/10" for 127.0.0.1 at 2017-08-03 14:10:47 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    24: 			
+    25: 			<div>
+    26: 			  <strong>Marca:</strong>
+    27: 			  <%= @product.brand.name %>
+    28: 			</div>
+    29: 
+    30: 			<%= link_to 'Editar', edit_product_path(@product),:class => "btn btn-info"  %>   
+  
+app/views/products/show.html.erb:27:in `_app_views_products_show_html_erb__3021961090242306263_70132802224580'
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:11:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 70ms (Views: 65.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:11:05 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (8.4ms)
+  Rendered products/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 50ms (Views: 46.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:11:13 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EWEYdIBdS2aYFq5K7F5ZLZNdVKGbFE8xlTJVr+s98+KKSjXnVR2ri5Qoah4mw5TLmi/zhyR5MAZfVu0f3z+oCQ==", "product"=>{"name"=>"Producto", "description"=>"sdf", "price"=>"33", "brand_id"=>"2"}, "commit"=>"Create Product"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "brand_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Producto"], ["description", "sdf"], ["price", 33], ["brand_id", 2], ["created_at", "2017-08-03 19:11:13.916972"], ["updated_at", "2017-08-03 19:11:13.916972"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/11
+Completed 302 Found in 9ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2017-08-03 14:11:13 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:11:15 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 60ms (Views: 55.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/products/10" for 127.0.0.1 at 2017-08-03 14:11:22 -0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nhJ4+H3hyZFBma3pU1cjbabpk9hPgNkI75GJBamtkt8FOVVrqKEpfE2nab2Zyu6Lr5s0/vDtpj8l9TG1na/JNA==", "id"=>"10"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 10]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 7ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:11:22 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:12:33 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (9.9ms)
+  Rendered products/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 48ms (Views: 31.9ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:12:34 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7B01tsplhxuyT8IlJTEv+8bL5A6enQmTxYzv+uMiJp93NhglHyVn9r5xBnHvrOIdz7lDKCHwdqQP6FdK1yB9dA==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (3.8ms)
+  Rendered products/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:35:00 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 49ms (Views: 43.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:35:02 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (30.9ms)
+  Rendered products/new.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 79ms (Views: 73.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:35:03 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r0UnmpSW9AZQKzyo8qeegtxH19JON8DuenELI9g4UOQ0bgoJQdYU61wV+Pw4OlNk1TVw9PFav9mwFbOT7DoLDw==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (4.5ms)
+  Rendered products/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 38ms (Views: 28.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:36:22 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 51ms (Views: 45.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:36:23 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (35.2ms)
+  Rendered products/new.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 94ms (Views: 89.8ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:36:24 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OA1g5WfmKC1CBFPZ4Tv2gXpAjaTNx0TPlKCBIJBnYcCjJk12sqbIwE46l40rpjtnczIqgnKqO/hexDmQpGU6Kw==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (4.6ms)
+  Rendered products/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 51ms (Views: 42.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:37:06 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 36ms (Views: 31.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:37:08 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (40.6ms)
+  Rendered products/new.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 90ms (Views: 84.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:37:08 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 63ms (Views: 55.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:37:09 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (15.9ms)
+  Rendered products/new.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 78ms (Views: 70.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:37:10 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yofUgItBaBlsEADss5iVxwS996+mEbyEUBpOHw43/ZVRrPkTXgGI9GAuxLh5BVghDc9QiRl8w7OafvavOjWmfg==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (9.3ms)
+  Rendered products/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 51ms (Views: 45.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:37:39 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 42ms (Views: 31.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:37:41 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (23.9ms)
+  Rendered products/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 62ms (Views: 55.6ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:37:42 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sh/FHN4BWmZSuwYxCwv2PU2HSxCkAHu+9tnb3YaZWkLRNOiPC0G6i16FwmXBljvbRPXsNhttBIk8vWNtspsBqQ==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (8.6ms)
+  Rendered products/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 39ms (Views: 32.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:37:59 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 48ms (Views: 42.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:38:00 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (73.9ms)
+  Rendered products/new.html.erb within layouts/application (80.8ms)
+Completed 200 OK in 121ms (Views: 116.5ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:38:01 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"US79Ro8CVZZguvndcO/IwdipzxLIHsYoUgzAXrLsq4TKBdDVWkK1e2yEPYm6cgUn0dtoNHdzuR+YaHjuhu7wbw==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (6.7ms)
+  Rendered products/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 53ms (Views: 36.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-08-03 14:38:26 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("products"."price") FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 42ms (Views: 37.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-08-03 14:38:27 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (31.1ms)
+  Rendered products/new.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 79ms (Views: 73.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-08-03 14:38:28 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3RDoZPNYJdlNl3aMkIoQ9KYkGYm6Sci+1Q0OsdjWbuBGO8X3JhjFNEGpsthaF90Sr1a+rwUkt4kfabYB7NQ1Cw==", "product"=>{"name"=>"", "description"=>"", "price"=>"", "brand_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered products/_form.html.erb (7.5ms)
+  Rendered products/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+
+
