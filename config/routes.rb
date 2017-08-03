@@ -5,9 +5,7 @@ Rails.application.routes.draw do
 
   get 'index_brand', to: 'brands#index'
   get 'index_product', to: 'products#index'
-  get 'index_home', to: 'home#index'
-  get 'home/index'
-  
+  get 'index_home', to: 'home#index'  
  
 
   #set homepage 
